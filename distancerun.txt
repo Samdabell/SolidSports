@@ -1,0 +1,9 @@
+
+Athlete ran 3 km
+Total distance run: 3 km
+Athlete ran 2 km
+Total distance run: 5 km
+Athlete ran 3 km
+Total distance run: 3 km
+Athlete ran 3 km
+Total distance run: 0 km

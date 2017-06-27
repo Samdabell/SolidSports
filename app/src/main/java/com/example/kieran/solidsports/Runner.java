@@ -9,12 +9,16 @@ public class Runner {
 
         Boxer boxer = new Boxer(34, 22);
         Gymnast gymnast = new Gymnast(2,4);
+        PrintToFile file = new PrintToFile();
+        PrintToConsole console = new PrintToConsole();
 
         boxer.enterEvent();
         gymnast.enterEvent();
 
         boxer.runningSession(3);
-        boxer.runningSession(2);
+        file.printRunInfo(3, boxer);
+        console.printRunInfo(3, boxer);
+
 
 
     }

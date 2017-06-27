@@ -1,6 +1,8 @@
 package com.example.kieran.solidsports;
 
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.PrintWriter;
 
 /**
@@ -48,16 +50,21 @@ public abstract class Athlete {
         }
     }
 
+    public int getDistanceRun() {
+        return distanceRun;
+    }
+
     public void runningSession(int distance) {
         distanceRun += distance;
-        System.out.println(String.format("Athlete ran %d km", distance));
-        System.out.println(String.format("Total distance run: %d km", distanceRun));
-
-        try (PrintWriter out = new PrintWriter("distancerun.txt")) {
-            out.println(String.format("Athlete ran %d km", distance));
-            out.println(String.format("Total distance run: %d km", distanceRun));
-        } catch (FileNotFoundException ex){
-            System.out.println(ex.getMessage());
-        }
+//        System.out.println(String.format("Athlete ran %d km", distance));
+//        System.out.println(String.format("Total distance run: %d km", distanceRun));
+//
+//        try (PrintWriter out = new PrintWriter(new FileOutputStream(new File("distancerun.txt"),true))) {
+//            out.println(String.format("Athlete ran %d km", distance));
+//            out.println(String.format("Total distance run: %d km", distanceRun));
+//            out.close();
+//        } catch (FileNotFoundException ex){
+//            System.out.println(ex.getMessage());
+//        }
     }
 }
