@@ -7,3 +7,7 @@ Athlete ran 3 km
 Total distance run: 3 km
 Athlete ran 3 km
 Total distance run: 0 km
+Athlete ran 6 km
+Total distance run: 6 km
+Athlete ran 4 km
+Total distance run: 10 km

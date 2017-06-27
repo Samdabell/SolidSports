@@ -12,9 +12,11 @@ import java.io.PrintWriter;
 public abstract class Athlete {
 
     int distanceRun;
+    Printing printer;
 
-    public Athlete(){
+    public Athlete(Printing printer){
         this.distanceRun = 0;
+        this.printer = printer;
     }
 
     public void enterEvent(){
@@ -56,6 +58,8 @@ public abstract class Athlete {
 
     public void runningSession(int distance) {
         distanceRun += distance;
+        printer.printRunInfo(distance, distanceRun);
+
 //        System.out.println(String.format("Athlete ran %d km", distance));
 //        System.out.println(String.format("Total distance run: %d km", distanceRun));
 //
@@ -67,4 +71,5 @@ public abstract class Athlete {
 //            System.out.println(ex.getMessage());
 //        }
     }
+
 }

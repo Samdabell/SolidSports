@@ -7,17 +7,20 @@ package com.example.kieran.solidsports;
 public class Runner {
     public static void main(String[] args) {
 
-        Boxer boxer = new Boxer(34, 22);
-        Gymnast gymnast = new Gymnast(2,4);
         PrintToFile file = new PrintToFile();
         PrintToConsole console = new PrintToConsole();
+        Boxer boxer = new Boxer(console, 34, 22);
+        Boxer boxer2 = new Boxer(file, 20, 9);
+        Gymnast gymnast = new Gymnast(file, 2,4);
+
 
         boxer.enterEvent();
         gymnast.enterEvent();
 
         boxer.runningSession(3);
-        file.printRunInfo(3, boxer);
-        console.printRunInfo(3, boxer);
+        boxer.runningSession(2);
+        boxer2.runningSession(6);
+        boxer2.runningSession(4);
 
 
 

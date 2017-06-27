@@ -9,7 +9,8 @@ public class Gymnast extends Athlete {
     private int difficulty;
     private int execution;
 
-    public Gymnast(int difficulty, int execution){
+    public Gymnast(Printing printer, int difficulty, int execution){
+        super(printer);
         this.difficulty = difficulty;
         this.execution = execution;
     }

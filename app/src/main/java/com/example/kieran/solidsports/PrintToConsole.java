@@ -6,8 +6,8 @@ package com.example.kieran.solidsports;
 
 public class PrintToConsole implements Printing{
 
-    public void printRunInfo(int distance, Athlete athlete){
+    public void printRunInfo(int distance, int total){
         System.out.println(String.format("Athlete ran %d km", distance));
-        System.out.println(String.format("Total distance run: %d km", athlete.getDistanceRun()));
+        System.out.println(String.format("Total distance run: %d km", total));
     }
 }
