@@ -6,5 +6,5 @@ package com.example.kieran.solidsports;
 
 public interface Printing {
 
-    void printRunInfo(int distance, Athlete athlete);
+    void printRunInfo(int distance, int total);
 }
